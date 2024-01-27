@@ -40,7 +40,15 @@ section > p{
     font-size: 4vw;
 }
 
+.attribution { 
+    font-size: 2.5vw; 
+    text-align: center; 
+    margin-top: 2.5vh;
+}
 
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
 
 /* for devices => 481px */
 @media (min-width : 481px) {
@@ -66,6 +74,12 @@ section > p{
         margin-bottom: 1.5vh;
         font-size: 1.2vw;
     }
+
+    .attribution { 
+        font-size: 0.8vw;  
+        margin-top: 1.3vh;
+    }
+    
 }
 
 /* for devices => 801px */
