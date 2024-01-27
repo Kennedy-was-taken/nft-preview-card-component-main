@@ -7,6 +7,7 @@
 /* card properties */
 .card-container{
     display: flex;
+    flex-direction: column;
     border-radius: 0.8rem;
     background-color: hsl(216, 50%, 16%);
     box-shadow: 0px 0px 6px hsla(218, 37%, 16%, 0.685);
@@ -19,26 +20,66 @@ img{
     border-radius: 0.8rem;
 }
 
+/* global properties */
+p{
+    font-family: 'Outfit';
+    color: white;
+}
+
+header > p{
+    font-weight: 600;
+    font-size: 5.8vw;
+    margin: 2.7vh 0px;
+}
+
+section > p{
+    margin-top: 0px;
+    margin-bottom: 2.7vh;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    font-size: 4vw;
+}
+
+
+
 /* for devices => 481px */
 @media (min-width : 481px) {
     
-    /* card properties */
+    /* updated card properties */
     .card-container{
-        border-radius: 0.5rem;
-        margin: 0px 40vw;
-        padding : 2vh 2.5vw;
+        border-radius: 0.3rem;
+        margin: 0px 38vw;
+        padding : 2vh 2vw;
     }
 
+    /* updated values */
     img{
-        border-radius: 0.5rem;
+        border-radius: 0.3rem;
+    }
+
+    header > p{
+        font-size: 1.5vw;
+        margin: 1.5vh 0px;
+    }
+
+    section > p{
+        margin-bottom: 1.5vh;
+        font-size: 1.2vw;
     }
 }
 
+/* for devices => 801px */
 @media (min-width : 801px) {
     
     /* card properties */
     .card-container{
         padding : 2vh 2vw;
+        border-radius: 0.5rem;
+    }
+
+    /* updated values */
+    img{
+        border-radius: 0.5rem;
     }
 }
 
@@ -46,11 +87,11 @@ img{
     
     /* card properties */
     .card-container{
-        border-radius: 1rem;
+        border-radius: 0.8rem;
     }
 
     img{
-        border-radius: 1rem;
+        border-radius: 0.8rem;
     }
 }
 
