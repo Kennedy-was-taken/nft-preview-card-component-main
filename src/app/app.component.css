@@ -15,7 +15,7 @@
     margin : 0px 6vw
 }
 
-img{
+div > img{
     width: 100%;
     border-radius: 0.8rem;
 }
@@ -32,12 +32,47 @@ header > p{
     margin: 2.7vh 0px;
 }
 
-section > p{
+.group-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 100%;
+}
+
+.body > p{
     margin-top: 0px;
     margin-bottom: 2.7vh;
     font-weight: 300;
     color: hsl(215, 51%, 70%);
     font-size: 4vw;
+}
+
+section > img{
+    object-fit: contain;
+    margin-right: 2vw;
+    margin-bottom: 2.7vh;
+}
+
+.group-1 > .cost{
+    margin-top: 0px;
+    margin-bottom: 2.7vh;
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+    font-size: 3vw;
+}
+
+.clock{
+    margin-left: auto;
+}
+
+.time{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    text-align: right;
+    margin-right: 0px;
+    margin-bottom: 2.7vh;
+    margin-top: 0px;
+    font-size: 3vw;
 }
 
 .attribution { 
@@ -48,6 +83,11 @@ section > p{
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+.line{
+    border: 1px solid hsl(215, 32%, 27%);
+    margin-bottom: 2.7vh;
 }
 
 /* for devices => 481px */
@@ -70,14 +110,35 @@ section > p{
         margin: 1.5vh 0px;
     }
 
-    section > p{
-        margin-bottom: 1.5vh;
+    .body > p{
+        margin-bottom: 2vh;
         font-size: 1.2vw;
     }
 
     .attribution { 
         font-size: 0.8vw;  
         margin-top: 1.3vh;
+    }
+
+    section > img{
+        margin-right: 0.5vw;
+        margin-bottom: 1.5vh;
+        width: 1vw;
+    }
+
+    .group-1 > .cost{
+        margin-top: 0px;
+        margin-bottom: 1.5vh;
+        font-size: 1vw;
+    }
+
+    .time{
+        margin-bottom: 1.5vh;
+        font-size: 1vw;
+    }
+
+    .line{
+        margin-bottom: 1.5vh;
     }
     
 }
@@ -107,6 +168,7 @@ section > p{
     img{
         border-radius: 0.8rem;
     }
+    
 }
 
 
