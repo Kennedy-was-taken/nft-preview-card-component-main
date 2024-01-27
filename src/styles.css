@@ -5,8 +5,9 @@ html, body{
 
 body{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: hsl(217, 54%, 11%);
     margin: 0px;
+    
 }
