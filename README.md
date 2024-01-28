@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
   
-   ![Full screen](./src/assets/content-images/product.PNG)
+   ![Full screen](./src/assets/content-images/product1.PNG)
 
 ### Links
 
