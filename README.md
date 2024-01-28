@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
   
-   ![Full screen](src/assets/content-images/desktop-preview.jpg)
+   ![Full screen](./src/assets/content-images/desktop-preview.jpg)
 
 ### Links
 
