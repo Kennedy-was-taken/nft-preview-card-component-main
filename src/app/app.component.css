@@ -12,12 +12,34 @@
     background-color: hsl(216, 50%, 16%);
     box-shadow: 0px 0px 6px hsla(218, 37%, 16%, 0.685);
     padding : 2.5vh 6vw;
-    margin : 0px 6vw
+    margin : 0px 6vw;
+    position: relative;
 }
 
-div > img{
+.switch-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease;
+    border-radius: 0.8rem;
+}
+
+.fullimage{
     width: 100%;
     border-radius: 0.8rem;
+    transition: .5s ease;
+    background: hsl(178, 100%, 50%);
+}
+
+.overlap{
+    display: grid;
+    opacity: 0;
+    width: 15%;
+    position: absolute;
+    top:inherit;
+    transition: .5s ease;
+    
 }
 
 /* global properties */
@@ -32,13 +54,6 @@ header > p{
     margin: 2.7vh 0px;
 }
 
-.group-1{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    width: 100%;
-}
-
 .body > p{
     margin-top: 0px;
     margin-bottom: 2.7vh;
@@ -47,7 +62,15 @@ header > p{
     font-size: 4vw;
 }
 
-section > img{
+.group-1, .group-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+
+.group-1 > img{
     object-fit: contain;
     margin-right: 2vw;
     margin-bottom: 2.7vh;
@@ -90,6 +113,49 @@ section > img{
     margin-bottom: 2.7vh;
 }
 
+.group-2 > img{
+    object-fit: contain;
+    margin-right: 5vw;
+    margin-bottom: 2.7vh;
+}
+
+.profile{
+    width: 10vw;
+    border: 1px solid white;
+    border-radius: 10vw;
+}
+
+.user{
+    margin-top: 0px;
+    color: hsl(215, 51%, 70%);
+    font-size: 4vw;
+    margin-bottom: 2.7vh;
+}
+
+span{
+    color: white;
+}
+
+/* click event */
+header p:active, span:active{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.switch-container:active{
+    background-color: hsl(178, 100%, 50%);
+    opacity: 1;
+}
+
+.switch-container:active .fullimage{
+    opacity: 0.5;
+}
+
+.switch-container:active .overlap{
+    opacity: 1;
+}
+
+
 /* for devices => 481px */
 @media (min-width : 481px) {
     
@@ -120,7 +186,7 @@ section > img{
         margin-top: 1.3vh;
     }
 
-    section > img{
+    .group-1 > img{
         margin-right: 0.5vw;
         margin-bottom: 1.5vh;
         width: 1vw;
@@ -141,6 +207,40 @@ section > img{
         margin-bottom: 1.5vh;
     }
     
+    .group-2 > img{
+        margin-right: 1vw;
+        margin-bottom: 1vh;
+        width: 2.5vw;
+    }
+
+    .profile{
+        border-radius: 2.5vw;
+    }
+
+    .user{
+        font-size: 1vw;
+        margin-bottom: 1vh;
+    }
+
+    /* hover event */
+    header p:hover, span:hover{
+        color: hsl(178, 100%, 50%);
+        cursor: pointer;
+    }
+
+    .switch-container:hover{
+        background-color: hsl(178, 100%, 50%);
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .switch-container:hover .fullimage{
+        opacity: 0.5;
+    }
+
+    .switch-container:hover .overlap{
+        opacity: 1;
+    }
 }
 
 /* for devices => 801px */
