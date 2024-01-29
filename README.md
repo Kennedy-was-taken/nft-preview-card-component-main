@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub code solution URL](https://github.com/Kennedy-was-taken/landing-page-with-single-introductory)
-- Live site Url : [Vercel QR code app](landing-page-with-single-introductory.vercel.app)
+- Live site Url : [Vercel QR code app](https://nft-preview-card-component-main-silk.vercel.app)
 
 
 ### Built with
