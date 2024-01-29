@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub code solution URL](https://github.com/Kennedy-was-taken/landing-page-with-single-introductory)
+- Solution URL: [GitHub code solution URL](https://github.com/Kennedy-was-taken/nft-preview-card-component-main)
 - Live site Url : [Vercel QR code app](https://nft-preview-card-component-main-silk.vercel.app)
 
 
